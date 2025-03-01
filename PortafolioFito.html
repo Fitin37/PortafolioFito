@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Rodolfo Pérez</title>
+    <style>
+        /* Reseteo básico de estilos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Estilos para la barra de navegación */
+        nav {
+            background-color: #333;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        /* Secciones del portafolio */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+        }
+
+        .card-content p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .card-button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .card-button:hover {
+            background-color: #575757;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Efecto de scroll suave */
+        html {
+            scroll-behavior: smooth;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#tecnologias">Tecnologías</a>
+        <a href="#proyectos">Proyectos</a>
+    </nav>
+
+    <!-- Contenido del portafolio -->
+    <div class="container">
+
+        <!-- Sección de inicio -->
+        <section id="inicio" class="section">
+            <h2>Bienvenido a mi Portafolio</h2>
+            <p>¡Hola! Soy Rodolfo Pérez, un desarrollador apasionado por la tecnología. En este portafolio, te invito a conocer más sobre mí y los proyectos en los que trabajo. Aquí podrás ver las tecnologías que manejo y mis trabajos más recientes.</p>
+        </section>
+
+        <!-- Sección de tecnologías -->
+        <section id="tecnologias" class="section">
+            <h2>Tecnologías que manejo</h2>
+            <div class="cards">
+                <!-- Card de Kotlin -->
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png" alt="Kotlin">
+                    <div class="card-content">
+                        <h3>Kotlin</h3>
+                        <p>Lenguaje moderno y versátil, utilizado principalmente en aplicaciones Android.</p>
+                    </div>
+                </div>
+
+                <!-- Card de C# -->
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv5PlR-6YZDHZIW8Axyo7AoQP7tTPyotHhEQ&s" alt="C#">
+                    <div class="card-content">
+                        <h3>C#</h3>
+                        <p>Lenguaje orientado a objetos utilizado en el desarrollo de aplicaciones para la plataforma .NET.</p>
+                    </div>
+                </div>
+
+                <!-- Card de Oracle -->
+                <div class="card">
+                    <img src="https://mma.prnewswire.com/media/467598/Oracle_Logo.jpg?p=facebook" alt="Oracle">
+                    <div class="card-content">
+                        <h3>Oracle</h3>
+                        <p>Base de datos relacional utilizada en aplicaciones empresariales para la gestión de grandes cantidades de datos.</p>
+                    </div>
+                </div>
+
+                <!-- Card de SQL -->
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" alt="SQL">
+                    <div class="card-content">
+                        <h3>SQL</h3>
+                        <p>Lenguaje utilizado para la manipulación y gestión de bases de datos relacionales.</p>
+                    </div>
+                </div>
+
+                <!-- Card de Java -->
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVHb7sS50BZHrbf0Yj89bkRAXtT4a8_QEbZQ&s" alt="Java">
+                    <div class="card-content">
+                        <h3>Java</h3>
+                        <p>Lenguaje de programación de propósito general, utilizado tanto para aplicaciones móviles como en sistemas grandes.</p>
+                    </div>
+                </div>
+
+                <!-- Card de JavaScript -->
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript">
+                    <div class="card-content">
+                        <h3>JavaScript</h3>
+                        <p>Lenguaje de programación clave para el desarrollo web interactivo, tanto en el frontend como en el backend.</p>
+                    </div>
+                </div>
+
+                <!-- Card de Angular -->
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png" alt="Angular">
+                    <div class="card-content">
+                        <h3>Angular</h3>
+                        <p>Framework para aplicaciones web, ideal para la creación de interfaces interactivas y complejas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de proyectos -->
+        <section id="proyectos" class="section">
+            <h2>Proyectos</h2>
+            <div class="cards">
+                <!-- Proyecto SoftTech -->
+                <div class="card">
+                    <div class="card-content">
+                        <h3>SoftTech</h3>
+                        
+                    </div>
+                </div>
+
+                <!-- Proyecto FixIt -->
+                <div class="card">
+                    <div class="card-content">
+                        <h3>FixIt</h3>
+                        
+                    </div>
+                </div>
+
+                <!-- Proyecto Cholos -->
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Cholos</h3>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Rodolfo Pérez 20230300. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Funcionalidad JavaScript si es necesario, por ejemplo, para abrir proyectos o realizar validaciones
+    </script>
+</body>
+</html>
